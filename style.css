@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgb(233, 233, 233);
+    color: black;
+    font-family: 'poppins', sans-serif;
+}
+
+header,form{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 32px;
+    border: none ;
+    background: rgb(195, 176, 160);
+}
+
+
+form button{
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: black;
+    color: white;
+}
+
+
+.todo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: rgb(195, 176, 160);
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+
+}
+
+
+.todo li{
+    flex: 1;
+  }
+
+.todo-item{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+}
+
+.trash-btn, 
+.complete-btn{
+    background: black;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: rgb(73,205,73);
+      
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fail{
+    transform: translateY(8rem) rotateZ(20deg) ;
+    opacity: 0;
+}
